@@ -12,11 +12,7 @@ public class Lab03_Report {
         // Salary  : 50000
         // ----------------
         // Status  : ACTIVE
-        System.out.println("Name    : Alice");
-        System.out.println("Age     : 25");
-        System.out.println("Salary  : 50000");
-        System.out.println("----------------");
-        System.out.print("Status  : ACTIVE");
+  
 
     }
 }
