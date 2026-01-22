@@ -117,57 +117,6 @@ public class Lab05_TripCalculatorLab {
 
 
         // TODO 1
-        String make, model;
-        double batteryKWh;
-        byte gear;
-        short tripKm;
-        double avgSpeedKmph;
-        double efficiencyKmPerKWh;
-
-        // TODO 2
-        make = makeConst;
-        model = modelConst;
-        batteryKWh = batteryKWhConst;
-        gear = gearConst;
-        tripKm = tripKmConst;
-        avgSpeedKmph = avgSpeedKmphConst;
-        efficiencyKmPerKWh = efficiencyKmPerKWhConst;
-
-        // TODO 3
-        double hours = tripKm / avgSpeedKmph;
-        int estMinutes = (int) (hours * 60);
-
-        // TODO 4
-        double energyUsedKWh = tripKm / efficiencyKmPerKWh;
-        double remainingKWh = batteryKWh - energyUsedKWh;
-
-        // TODO 5
-        String rangeStatus;
-        if (remainingKWh >= 10.0) {
-            rangeStatus = "SAFE";
-        } else if (remainingKWh >= 3.0) {
-            rangeStatus = "LOW";
-        } else {
-            rangeStatus = "CRITICAL";
-        }
-
-        // TODO 6 (truncate to 1 decimal)
-        double energyUsed1 = (double) ((int) (energyUsedKWh * 10)) / 10;
-        double remaining1 = (double) ((int) (remainingKWh * 10)) / 10;
-
-        System.out.println("Car: " + make + " " + model);
-        System.out.println("Gear: " + gear);
-        System.out.println("Trip (km): " + tripKm);
-        System.out.println("Avg speed (km/h): " + avgSpeedKmph);
-        System.out.println("Est time (min): " + estMinutes);
-        System.out.println("Energy used (kWh): " + energyUsed1);
-        System.out.println("Remaining (kWh): " + remaining1);
-        System.out.println("Status: " + rangeStatus);
-
-        // TODO 7
-        for (byte g = 1; g <= 3; g++) {
-            short speed = (short) (g * 20);
-            System.out.println("Gear " + g + " speed=" + speed);
-        }
+       
     }
 }
