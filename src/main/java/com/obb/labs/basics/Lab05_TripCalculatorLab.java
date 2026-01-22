@@ -116,7 +116,7 @@ public class Lab05_TripCalculatorLab {
         // TODO 7: loop and print
 
 
-        // TODO 1
-       
+
+
     }
 }

@@ -12,7 +12,6 @@ public class Lab03_Report {
         // Salary  : 50000
         // ----------------
         // Status  : ACTIVE
-  
 
     }
 }

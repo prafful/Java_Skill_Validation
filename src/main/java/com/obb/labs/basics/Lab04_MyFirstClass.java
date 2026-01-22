@@ -83,13 +83,7 @@ public class Lab04_MyFirstClass {
         // TODO 5: (declare revs + calculate + print)
 
         // TODO 1: Declare variables
-        String make;
-        String model;
-        double engineSize;
-        byte gear;
 
-        // TODO 2: Initialize variables
-       
 
     }
 }
