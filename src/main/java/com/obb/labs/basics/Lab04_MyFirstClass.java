@@ -21,10 +21,10 @@ public class Lab04_MyFirstClass {
         // TODO 1: Declare variables
         // =========================
         // Declare:
-        //   String make
-        //   String model
-        //   double engineSize
-        //   byte gear
+           String make;
+           String model;
+           double engineSize;
+           byte gear;
         //
         // NOTE: Java is case sensitive.
 
@@ -35,10 +35,10 @@ public class Lab04_MyFirstClass {
         // TODO 2: Initialize variables
         // ==========================
         // Initialize with these EXACT values (so the test can verify output):
-        //   make = "BMW"
-        //   model = "530D"
-        //   engineSize = 3.0
-        //   gear = 2
+           make = "BMW";
+           model = "530D";
+           engineSize = 3.0;
+           gear = 2;
 
         // TODO 2: (initialize here)
 
@@ -55,6 +55,10 @@ public class Lab04_MyFirstClass {
         // Use string concatenation (+)
 
         // TODO 3: (print here)
+        System.out.println("The make is " + make);
+        System.out.println("The model is " + model);
+        System.out.println("The engine size is " + engineSize);
+        System.out.println("The gear is " + gear);
 
 
         // ==========================
@@ -70,6 +74,9 @@ public class Lab04_MyFirstClass {
         // The speed is 40
 
         // TODO 4: (declare speed + calculate using casting + print)
+        short speed;
+        speed = (short)(gear * 20);
+        System.out.println("The speed is " + speed);
 
 
         // ==========================
@@ -81,9 +88,35 @@ public class Lab04_MyFirstClass {
         // The revs is 80
 
         // TODO 5: (declare revs + calculate + print)
+        int revs;
+        revs = speed * gear;
+        System.out.println("The revs is " + revs);
 
         // TODO 1: Declare variables
+//        String make;
+//        String model;
+//        double engineSize;
+//        byte gear;
 
+        // TODO 2: Initialize variables
+//        make = "BMW";
+//        model = "530D";
+//        engineSize = 3.0;
+//        gear = 2;
+
+        // TODO 3: Print car details
+//        System.out.println("The make is " + make);
+//        System.out.println("The model is " + model);
+//        System.out.println("The engine size is " + engineSize);
+//        System.out.println("The gear is " + gear);
+
+        // TODO 4: Casting + arithmetic
+//        short speed = (short) (gear * 20);
+//        System.out.println("The speed is " + speed);
+
+        // TODO 5: Revs
+//        int revs = speed * gear;
+//        System.out.println("The revs is " + revs);
 
     }
 }
