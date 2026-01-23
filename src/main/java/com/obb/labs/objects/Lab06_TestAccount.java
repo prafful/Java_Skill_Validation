@@ -23,6 +23,9 @@ public class Lab06_TestAccount {
 
         // TODO 6: Instantiate a new Account object called myAccount
         // Account myAccount = ???
+        Account myAccount = new Account();
+        myAccount.setName("OBB Student");
+        myAccount.setBalance(1000.00);
 
         // TODO 7: Set name to "OBB Student" and balance to 1000.00 using setters
         // myAccount.setName(...);
@@ -32,6 +35,8 @@ public class Lab06_TestAccount {
         // Required formatting:
         // Name : <name>
         // Balance : <balance with 2 decimals>
+        System.out.println("Name : " + myAccount.getName());
+        System.out.printf("Balance : %.2f%n", +myAccount.getBalance());
         //
         // Hint: System.out.println for name line, and System.out.printf for money.
         // System.out.println("Name : " + ...);
@@ -40,15 +45,17 @@ public class Lab06_TestAccount {
         // TODO 10: Call addInterest() then print updated balance (exact contract below)
         // myAccount.addInterest();
         // System.out.printf("Balance after interest : %.2f%n", ...);
-
-        Account myAccount = new Account();
-        myAccount.setName("OBB Student");
-        myAccount.setBalance(1000.00);
-
-        System.out.println("Name : " + myAccount.getName());
-        System.out.printf("Balance : %.2f%n", myAccount.getBalance());
-
         myAccount.addInterest();
         System.out.printf("Balance after interest : %.2f%n", myAccount.getBalance());
+
+//        Account myAccount = new Account();
+//        myAccount.setName("OBB Student");
+//        myAccount.setBalance(1000.00);
+
+//        System.out.println("Name : " + myAccount.getName());
+//        System.out.printf("Balance : %.2f%n", myAccount.getBalance());
+
+//        myAccount.addInterest();
+//        System.out.printf("Balance after interest : %.2f%n", myAccount.getBalance());
     }
 }

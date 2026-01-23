@@ -6,6 +6,10 @@ public class Lab02_PrintPatterns {
 
         // TODO:
         // Print the following exactly:
+//        System.out.println("Java \nis \nfun!");
+        System.out.println("Java\n"+"is\n"+"fun!");
+//        System.out.println("is");
+//        System.out.println("fun!");
         //
         // Java
         // is
