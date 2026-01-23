@@ -7,10 +7,10 @@ an electric vehicle dashboard.
 
 The program models a real-world scenario where a car system estimates:
 
--   Travel time for a trip\
--   Energy consumed from the battery\
--   Remaining battery capacity\
--   Safety status of the trip based on remaining range
+-   Travel time for a trip.
+-   Energy consumed from the battery.
+-   Remaining battery capacity.
+-   Safety status of the trip based on remaining range.
 
 The purpose of this project is to teach fundamental Java concepts while
 following professional coding structure and discipline.
@@ -26,13 +26,13 @@ The program answers these practical questions:
 
 ### Concepts Taught
 
--   Primitive data types\
--   Variables and constants\
--   Arithmetic operators\
--   Type casting\
--   Conditional logic (`if/else`)\
--   Looping (`for`)\
--   Console output\
+-   Primitive data types
+-   Variables and constants
+-   Arithmetic operators
+-   Type casting
+-   Conditional logic (`if/else`)
+-   Looping (`for`)
+-   Console output
 -   Execution flow
 
 ------------------------------------------------------------------------
@@ -46,9 +46,9 @@ The program answers these practical questions:
 
 `com.obb.labs.basics` represents:
 
--   `com` → company namespace\
--   `obb` → organizational domain\
--   `labs` → training modules\
+-   `com` → company namespace
+-   `obb` → organizational domain
+-   `labs` → training modules
 -   `basics` → beginner-level Java concepts
 
 This mirrors enterprise package naming conventions.
@@ -86,8 +86,8 @@ systems.
 public class Lab05_TripCalculatorLab {
 ```
 
--   `public` → accessible from anywhere\
--   `class` → blueprint for creating objects\
+-   `public` → accessible from anywhere
+-   `class` → blueprint for creating objects
 -   This class contains the program entry point
 
 ------------------------------------------------------------------------
@@ -116,8 +116,8 @@ Breakdown:
 final String makeConst = "TATA";
 ```
 
--   `final` → value cannot change\
--   Used for system configuration data\
+-   `final` → value cannot change
+-   Used for system configuration data
 -   Represents immutable inputs
 
 ------------------------------------------------------------------------
@@ -164,7 +164,7 @@ double minutes = hours * 60;
 
 Operators:
 
--   `/` division\
+-   `/` division
 -   `*` multiplication
 
 ------------------------------------------------------------------------
@@ -205,8 +205,8 @@ Implements rule-based decision logic.
 
 Flow:
 
-1.  Test condition\
-2.  Execute matching branch\
+1.  Test condition
+2.  Execute matching branch
 3.  Skip remaining
 
 ------------------------------------------------------------------------
@@ -231,8 +231,8 @@ String concatenation uses `+` operator.
 
 Technique to limit decimals without libraries:
 
-1.  Multiply\
-2.  Convert to int\
+1.  Multiply
+2.  Convert to int
 3.  Divide back
 
 This simulates fixed-point math.
@@ -250,7 +250,7 @@ Loop structure:
   Part    Purpose
   ------- ----------------
   g=1     initialization
-  g\<=3   condition
+  g<=3   condition
   g++     increment
 
 ------------------------------------------------------------------------
