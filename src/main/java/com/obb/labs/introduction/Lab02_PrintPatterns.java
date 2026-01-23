@@ -13,5 +13,6 @@ public class Lab02_PrintPatterns {
 
         System.out.println("Java\n"+"is\n"+"fun!");
 
+
     }
 }

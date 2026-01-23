@@ -24,6 +24,7 @@ public class Lab06_TestAccount {
         // TODO 6: Instantiate a new Account object called myAccount
         // Account myAccount = ???
 
+
         // TODO 7: Set name to "OBB Student" and balance to 1000.00 using setters
         // myAccount.setName(...);
         // myAccount.setBalance(...);
@@ -41,14 +42,6 @@ public class Lab06_TestAccount {
         // myAccount.addInterest();
         // System.out.printf("Balance after interest : %.2f%n", ...);
 
-        Account myAccount = new Account();
-        myAccount.setName("OBB Student");
-        myAccount.setBalance(1000.00);
 
-        System.out.println("Name : " + myAccount.getName());
-        System.out.printf("Balance : %.2f%n", myAccount.getBalance());
-
-        myAccount.addInterest();
-        System.out.printf("Balance after interest : %.2f%n", myAccount.getBalance());
     }
 }
