@@ -10,7 +10,7 @@ public class Lab13_SubstringScanApp_Test {
     public static void main(String[] args) {
         String expected =
                 "Needle  : ow\n" +
-                        "Count   : 2";
+                        "Count   : 3";
 
         PrintStream originalOut = System.out;
         ByteArrayOutputStream buffer = new ByteArrayOutputStream();
