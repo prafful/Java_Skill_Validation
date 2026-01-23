@@ -24,6 +24,7 @@ public class Lab06_TestAccount {
         // TODO 6: Instantiate a new Account object called myAccount
         // Account myAccount = ???
 
+
         // TODO 7: Set name to "OBB Student" and balance to 1000.00 using setters
         // myAccount.setName(...);
         // myAccount.setBalance(...);

@@ -10,9 +10,7 @@ public class Lab02_PrintPatterns {
         // Java
         // is
         // fun!
-//        System.out.println("Java");
-//        System.out.println("is");
-//        System.out.println("fun!");
+
 
 
 
