@@ -27,7 +27,10 @@ public class Lab04_MyFirstClass {
         //   byte gear
         //
         // NOTE: Java is case sensitive.
-
+        String make;
+        String model;
+        double engineSize;
+        byte gear;
         // TODO 1: (declare here)
 
 
@@ -41,7 +44,10 @@ public class Lab04_MyFirstClass {
         //   gear = 2
 
         // TODO 2: (initialize here)
-
+        make = "BMW";
+        model = "530D";
+        engineSize = 3.0;
+        gear = 2;
 
         // ==========================
         // TODO 3: Print car details
@@ -55,7 +61,10 @@ public class Lab04_MyFirstClass {
         // Use string concatenation (+)
 
         // TODO 3: (print here)
-
+        System.out.println("The make is " + make);
+        System.out.println("The model is " + model);
+        System.out.println("The engine size is " + engineSize);
+        System.out.println("The gear is " + gear);
 
         // ==========================
         // TODO 4: Casting + arithmetic
@@ -71,7 +80,8 @@ public class Lab04_MyFirstClass {
 
         // TODO 4: (declare speed + calculate using casting + print)
 
-
+        short speed = (short) (gear * 20);
+        System.out.println("The speed is " + speed);
         // ==========================
         // TODO 5 (Optional extra, but REQUIRED in this lab):
         // ==========================
@@ -79,34 +89,20 @@ public class Lab04_MyFirstClass {
         // Set revs to: speed * gear
         // Print EXACTLY:
         // The revs is 80
-
-        // TODO 5: (declare revs + calculate + print)
-
-        // TODO 1: Declare variables
-        String make;
-        String model;
-        double engineSize;
-        byte gear;
-
-        // TODO 2: Initialize variables
-        make = "BMW";
-        model = "530D";
-        engineSize = 3.0;
-        gear = 2;
-
-        // TODO 3: Print car details
-        System.out.println("The make is " + make);
-        System.out.println("The model is " + model);
-        System.out.println("The engine size is " + engineSize);
-        System.out.println("The gear is " + gear);
-
-        // TODO 4: Casting + arithmetic
-        short speed = (short) (gear * 20);
-        System.out.println("The speed is " + speed);
-
-        // TODO 5: Revs
         int revs = speed * gear;
         System.out.println("The revs is " + revs);
+        // TODO 5: (declare revs + calculate + print)
+
+
+
+        // TODO 3: Print car details
+
+
+        // TODO 4: Casting + arithmetic
+
+
+        // TODO 5: Revs
+
 
     }
 }
