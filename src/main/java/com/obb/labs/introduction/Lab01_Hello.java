@@ -5,4 +5,5 @@ public class Lab01_Hello {
 
         System.out.println("Hello, Java Learner!");
     }
+
 }

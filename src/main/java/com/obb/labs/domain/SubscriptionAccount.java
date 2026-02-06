@@ -1,4 +1,4 @@
-package com.obb.domain;
+package com.obb.labs.domain;
 
 /**
  * Domain object: Telecom subscription account.
@@ -64,16 +64,19 @@ public class SubscriptionAccount {
      * default -> Unknown
      */
     public String getPlanLabel() {
-        // TODO: implement using switch/case
-        return null;
+        return switch (planCode) {
+            case "BASIC" -> "Starter";
+            case "PRO" -> "Pro Plus";
+            case "ULTRA" -> "Ultra Max";
+            default -> "Unknown";
+        };
     }
 
     /**
      * Subtotal = monthlyFee * monthsPaid
      */
     public double calculateSubTotal() {
-        // TODO: implement
-        return 0;
+        return monthlyFee * monthsPaid;
     }
 
     /**
@@ -83,8 +86,13 @@ public class SubscriptionAccount {
      * - otherwise         -> 0.00
      */
     public double loyaltyDiscountRate() {
-        // TODO: implement
-        return 0;
+        if (monthsPaid >= 12) {
+            return 0.10;  // 10% discount
+        } else if (monthsPaid >= 6) {
+            return 0.05;  // 5% discount
+        } else {
+            return 0.00;  // No discount
+        }
     }
 
     /**
@@ -92,15 +100,17 @@ public class SubscriptionAccount {
      */
     public double calculateDiscountAmount() {
         // TODO: implement (should call other business methods)
-        return 0;
+        double subtotal = calculateSubTotal();
+        double discountRate = loyaltyDiscountRate();
+        return subtotal*discountRate;
     }
 
     /**
      * Tax rate is fixed at 18% (0.18)
      */
     public double taxRate() {
-        // TODO: return 0.18
-        return 0;
+        return 0.18;
+//        return 0;
     }
 
     /**
@@ -110,7 +120,10 @@ public class SubscriptionAccount {
      */
     public double calculateTaxAmount() {
         // TODO: implement using methods above
-        return 0;
+        double subtotal = calculateSubTotal();
+        double discountAmount = calculateDiscountAmount();
+        double taxable = subtotal - discountAmount;
+        return taxable * taxRate();
     }
 
     /**
@@ -119,7 +132,10 @@ public class SubscriptionAccount {
      */
     public double calculateFinalTotal() {
         // TODO: implement
-        return 0;
+        double subtotal = calculateSubTotal();
+        double discountAmount = calculateDiscountAmount();
+        double taxAmount = calculateTaxAmount();
+        return (subtotal - discountAmount) + taxAmount;
     }
 
     /**
@@ -128,6 +144,10 @@ public class SubscriptionAccount {
      */
     public String statusLabel() {
         // TODO: implement using if/else
-        return null;
+        if (active){
+            return "ACTIVE";
+        }else {
+            return "SUSPENDED";
+        }
     }
 }
